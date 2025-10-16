@@ -1,0 +1,70 @@
+# To trzeba wykonać w przeglądarce! 
+# Najlepiej w trybie incognito albo w tym profilu w którym jesteśmy zalogowani do właściwego tenanta
+# PKCE: (to jest DOWOLNY ciąg znaków base64, SHA256-szowany)
+# code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256
+# code_verifier=dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk
+# (Consent for TK101-VSCodeDemo zrobi automatycznie Enterprise App w tenancie użytkownika (tego co się zalogował)
+
+https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=WlasnyClientID&response_type=code&redirect_uri=http://localhost/tk101-vscodedemo&response_mode=query&scope=openid%20offline_access%20user.read&state=12345&code_challenge=E9Melhoa2OwvFrEMTJguCHaoeK1t8URWbuGJSstw-cM&code_challenge_method=S256
+
+# Odpowiedź to: 
+# http://localhost/tk101-vscodedemo?code=TuCodeOdpowiedzZEntraSkopiowacZURL-a&state=12345&session_state=006dbdd9-4fa4-3e59-9028-9f75ff8fdd47
+# Origin - by zasymlowac CORS
+
+###
+
+POST https://login.microsoftonline.com/common/oauth2/v2.0/token
+Origin: http://localhost
+Content-Type: application/x-www-form-urlencoded
+
+client_id=WlasnyClientID&
+grant_type=authorization_code&
+code=TuCodeOdpowiedzZEntraSkopiowacZURL&
+redirect_uri=http://localhost/tk101-vscodedemo&
+code_verifier=dBjftJeZ4CVP-mB92K27uhbUJU1p1r_wW1gFWFOEjXk&
+scope=openid offline_access user.read
+
+#Odpowiedź to
+# {
+#   "token_type": "Bearer",
+#   "scope": "openid User.Read profile email",
+#   "expires_in": 5016,
+#   "ext_expires_in": 5016,
+#   "access_token": "<tu token dostępowy (ty do MS Graph)>",
+#   "refresh_token": "<tu token, jego wysłanie pozwoli odświeżyć access_token>",
+#   "id_token": "<tu token tożsamości>"
+# }
+
+###
+#Teraz można wykonać request do MS Graph
+GET https://graph.microsoft.com/v1.0/me 
+Authorization: Bearer <tu token dostępowy (ty do MS Graph)>
+
+# Opdowiedź to
+# {
+#   "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+#   "businessPhones": [],
+#   "displayName": "Tomasz Kopacz (EXT)",
+#   "givenName": "Tomasz",
+#   "jobTitle": null,
+#   "mail": "tkopaczdemo@MngEnvMCAP327243.onmicrosoft.com",
+#   "mobilePhone": null,
+#   "officeLocation": null,
+#   "preferredLanguage": "en-US",
+#   "surname": "Kopacz (EXT)",
+#   "userPrincipalName": "tkopaczdemo@MngEnvMCAP327243.onmicrosoft.com",
+#   "id": "b4d39a45-1636-4d0c-9817-d4d234506431"
+# }
+
+###
+# A teraz odczytanie plików z OneDrive
+GET https://graph.microsoft.com/v1.0/me/messages
+Authorization: Bearer <tu token dostępowy (ty do MS Graph)>
+
+# Odpowiedź to (no bo bearer NIE MA do tego uprawnień)
+# {
+#   "error": {
+#     "code": "ErrorAccessDenied",
+#     "message": "Access is denied. Check credentials and try again."
+#   }
+# }

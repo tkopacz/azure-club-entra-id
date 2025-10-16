@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>On-Behalf-Of Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Microsoft Entra ID OBO Demo</h1>
+      <p id="status">Loading...</p>
+      <div class="actions">
+        <button id="login">Sign in</button>
+        <button id="logout">Sign out</button>
+        <button id="call-api">Call Web API</button>
+      </div>
+      <section>
+        <h2>GraphAPI /me (from OBO - SPA -> Web Api -> Graph API)</h2>
+        <pre id="profile"></pre>
+      </section>
+      <section>
+        <h2>Errors</h2>
+        <pre id="errors"></pre>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

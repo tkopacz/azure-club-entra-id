@@ -1,0 +1,11 @@
+@net_api_HostAddress = http://localhost:5058
+
+GET {{net_api_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{net_api_HostAddress}}/todos/1
+Accept: application/json
+
+###

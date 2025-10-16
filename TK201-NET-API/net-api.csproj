@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>net_api</RootNamespace>
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <UserSecretsId>c2cbde3e-dd92-4004-b02a-ea3bd94bb4bf</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NSwag.AspNetCore" Version="14.0.0" />
+    <!-- Entra ID (Azure AD) integration for JWT bearer tokens -->
+    <PackageReference Include="Microsoft.Identity.Web" Version="2.19.0" />
+  </ItemGroup>
+
+</Project>

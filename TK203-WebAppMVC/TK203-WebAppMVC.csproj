@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<RootNamespace>TK203_WebAppMVC</RootNamespace>
+		<UserSecretsId>ab5ac4d5-f58c-4e22-b1cb-a2fa6e4dc888</UserSecretsId>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="9.0.9" />
+		<PackageReference Include="Microsoft.Identity.Web" Version="3.14.1" />
+		<PackageReference Include="Microsoft.IdentityModel.Logging" Version="8.14.0" />
+		<PackageReference Include="Microsoft.Identity.Web.UI" Version="3.0.1" />
+
+	</ItemGroup>
+
+</Project>

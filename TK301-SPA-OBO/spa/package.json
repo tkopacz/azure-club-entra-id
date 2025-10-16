@@ -1,0 +1,23 @@
+{
+  "name": "ts-spa-obo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build-old": "tsc",
+    "clean": "rimraf public/js",
+    "watch": "tsc --watch",
+    "serve": "npm run build && npx http-server public -c-1 -p 5173",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^3.14.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9"
+  }
+}

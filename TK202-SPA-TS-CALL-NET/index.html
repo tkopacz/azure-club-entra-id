@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Entra + Graph mandatory, API optional</title>
+</head>
+
+<body>
+  <button id="login">Sign in (Graph consent)</button>
+  <button id="logout" disabled>Sign out</button>
+  <button id="listUsers" disabled>List users (Graph)</button>
+  <button id="callApi" disabled>Call API (asks consent when first used)</button>
+  <button id="callApiRole2" disabled>Call API2 (role-gated, role2)</button>
+  <button id="callApiRole3" disabled>Call API3 (role3 - no assignment)</button>
+
+  <pre id="stat"></pre>
+  <pre id="out"></pre>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
