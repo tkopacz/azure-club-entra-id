@@ -12,12 +12,12 @@ Repozytorium zawiera krótkie, edukacyjne demonstracje zaprezentowane podczas wy
 
 | Folder | Opis | Technologie |
 | --- | --- | --- |
-| `TK101-VSCodeDemo` | Surowy przepływ OAuth 2.0/PKCE wykonywany przez zapytania HTTP. | Entra ID, Microsoft Graph |
-| `TK102-SPA-TS` | Podstawowe logowanie SPA z MSAL.js. | TypeScript, Vite |
-| `TK201-NET-API` | Minimalne API ASP.NET Core zabezpieczone przez Entra ID. | .NET |
-| `TK202-SPA-TS-CALL-NET` | SPA wywołujące zabezpieczone API .NET. | TypeScript, Vite, .NET |
-| `TK203-WebAppMVC` | Aplikacja MVC z logowaniem Entra ID. | ASP.NET Core MVC |
-| `TK301-SPA-OBO` | SPA + API z przepływem On-Behalf-Of ([README](TK301-SPA-OBO/README.md)). | TypeScript, .NET |
+| `TK101-VSCodeDemo` | Surowy przepływ OAuth 2.0/PKCE wykonywany przez zapytania HTTP ([README](TK101-VSCodeDemo/readme-pl.md)). | Entra ID, Microsoft Graph |
+| `TK102-SPA-TS` | Podstawowe logowanie SPA z MSAL.js ([README](TK102-SPA-TS/readme-pl.md)). | TypeScript, Vite |
+| `TK201-NET-API` | Minimalne API ASP.NET Core zabezpieczone przez Entra ID ([README](TK201-NET-API/readme-pl.md)). | .NET |
+| `TK202-SPA-TS-CALL-NET` | SPA wywołujące zabezpieczone API .NET ([README](TK202-SPA-TS-CALL-NET/readme-pl.md)). | TypeScript, Vite, .NET |
+| `TK203-WebAppMVC` | Aplikacja MVC z logowaniem Entra ID ([README](TK203-WebAppMVC/readme-pl.md)). | ASP.NET Core MVC |
+| `TK301-SPA-OBO` | SPA + API z przepływem On-Behalf-Of ([README](TK301-SPA-OBO/readme-pl.md)). | TypeScript, .NET |
 
 ## Wymagania
 

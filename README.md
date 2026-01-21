@@ -12,12 +12,12 @@ This repository contains small, focused demos that were presented at the Azure C
 
 | Folder | Description | Tech |
 | --- | --- | --- |
-| `TK101-VSCodeDemo` | Raw OAuth 2.0/PKCE flow executed via HTTP requests. | Entra ID, Microsoft Graph |
-| `TK102-SPA-TS` | Basic SPA sign-in with MSAL.js. | TypeScript, Vite |
-| `TK201-NET-API` | Minimal ASP.NET Core API secured by Entra ID. | .NET |
-| `TK202-SPA-TS-CALL-NET` | SPA calling a protected .NET API. | TypeScript, Vite, .NET |
-| `TK203-WebAppMVC` | MVC web app with Entra ID sign-in. | ASP.NET Core MVC |
-| `TK301-SPA-OBO` | SPA + API demo with the On-Behalf-Of flow ([README](TK301-SPA-OBO/README.md)). | TypeScript, .NET |
+| `TK101-VSCodeDemo` | Raw OAuth 2.0/PKCE flow executed via HTTP requests ([README](TK101-VSCodeDemo/readme.md)). | Entra ID, Microsoft Graph |
+| `TK102-SPA-TS` | Basic SPA sign-in with MSAL.js ([README](TK102-SPA-TS/readme.md)). | TypeScript, Vite |
+| `TK201-NET-API` | Minimal ASP.NET Core API secured by Entra ID ([README](TK201-NET-API/readme.md)). | .NET |
+| `TK202-SPA-TS-CALL-NET` | SPA calling a protected .NET API ([README](TK202-SPA-TS-CALL-NET/readme.md)). | TypeScript, Vite, .NET |
+| `TK203-WebAppMVC` | MVC web app with Entra ID sign-in ([README](TK203-WebAppMVC/readme.md)). | ASP.NET Core MVC |
+| `TK301-SPA-OBO` | SPA + API demo with the On-Behalf-Of flow ([README](TK301-SPA-OBO/readme.md)). | TypeScript, .NET |
 
 ## Prerequisites
 
