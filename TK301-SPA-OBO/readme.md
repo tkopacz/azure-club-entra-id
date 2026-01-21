@@ -101,7 +101,7 @@ Open `https://localhost:5173` in the browser, sign in, and call the API to see t
 ## Project structure
 
 ```
-21-TS-SPA-OBO/
+TK301-SPA-OBO/
 ├── api
 │   ├── Controllers
 │   │   └── MeController.cs
@@ -119,7 +119,7 @@ Open `https://localhost:5173` in the browser, sign in, and call the API to see t
 │   │   ├── app.ts
 │   │   └── authConfig.ts
 │   └── tsconfig.json
-└── README.md
+└── readme.md
 ```
 
 Both projects are intentionally minimal to focus on the OBO scenario.

@@ -9,7 +9,7 @@ To demo pokazuje przepływ On-Behalf-Of (OBO): aplikacja SPA (TypeScript) uwierz
 ## Struktura rozwiązania
 - `api` – API ASP.NET Core zabezpieczone przez Entra ID, korzystające z OBO.
 - `spa` – SPA TypeScript z MSAL.js.
-- `README.md` – szczegółowy opis w języku angielskim.
+- `readme.md` – szczegółowy opis w języku angielskim.
 
 ## Wymagania
 - .NET 8 SDK.
