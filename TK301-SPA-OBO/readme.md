@@ -1,5 +1,8 @@
 # Microsoft Entra ID On-Behalf-Of Demo
 
+[English](readme.md) | [Polski](readme-pl.md)
+[Back to repository overview](../README.md)
+
 This sample shows how to combine a single-page application written in TypeScript with an ASP.NET Core Web API that calls the Microsoft Graph `/me` endpoint by using the [On-Behalf-Of (OBO) flow](https://learn.microsoft.com/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow).
 
 The solution contains two independent projects:
@@ -116,7 +119,7 @@ TK301-SPA-OBO/
 │   │   ├── app.ts
 │   │   └── authConfig.ts
 │   └── tsconfig.json
-└── README.md
+└── readme.md
 ```
 
 Both projects are intentionally minimal to focus on the OBO scenario.
