@@ -93,7 +93,7 @@ dotnet run
 ```bash
 cd spa
 npm install
-npm run serve
+npm run dev
 ```
 
 Open `https://localhost:5173` in the browser, sign in, and call the API to see the `/me` payload.
